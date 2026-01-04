@@ -12,7 +12,7 @@
 
  -- 1-03-2025
  
- # How to Create Portal / page / Desgin (Website)
+ # How to Created Portal / page / Desgin (Website)
  
  -- Service Portal > Service Portal Configuration.
   https://dev356655.service-now.com/sp_config
