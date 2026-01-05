@@ -100,3 +100,13 @@ That’s why it feels like you’re changing SP content.
 
 
  -- 1-05-2025
+
+ # Simple List Widget
+
+-- Exercise: Set Options for the Simple List Widget
+In this exercise, you will set the options for the Simple List widget to display a list of active Incident records opened by the currently logged in user.
+
+# Preparation
+-- In the main ServiceNow browser window, (not the Service Portal configuration page), use the All menu to open Incident > Open.
+
+-- Create a filter to display only active Incident records created by the currently logged in user.
