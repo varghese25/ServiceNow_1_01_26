@@ -1,3 +1,16 @@
+# ServiceNow
+
+
+
+ # All -> menu
+ -- 1. Service Portal > Service Portal Configuration. ( Create and Configure a Portal)
+
+
+
+
+
+
+
 # Study Recommendation <br>
 
 -- Since the exam will be Yokohama release based:<br>
@@ -23,3 +36,67 @@
  
  
  -- https://dev356655.service-now.com/$spd.do#/pm/editor/portal_meum_homepage/4a7fe71893de32507e33f9f7dd03d60e
+
+
+
+
+ -- 1-04-2025
+ # Service Portal Designer (SP) vs Portal Menu (PM) – Short Notes
+
+# Service Portal Designer (SP)
+
+-- Used to design portal pages
+
+-- Controls layout, widgets, icons, text
+
+-- Works on pages (e.g., sc_home)
+
+-- Affects how the page looks and behaves
+
+-- Page must be Active to load
+
+-- Does not control navigation
+
+-- Used for: UI design, widgets, page structure
+
+# Portal Menu (PM)
+
+--Used to manage navigation menus
+
+--Controls menu items, links, order, visibility
+
+--Works on menu records
+
+--Affects how users navigate
+
+--Menu item must be Active to appear
+
+--Does not affect page layout
+
+--Used for: Navigation and menu links
+
+--Key Difference (One Line)
+
+# SP designs pages; PM controls navigation. Both work independently and must be active as needed.
+
+Quick Comparison Table
+Feature	SP	PM
+Purpose	Page design	Navigation
+Widgets	Yes	No
+Page layout	Yes	No
+Menu links	No	Yes
+Controls look	Yes	No
+
+
+# Short answer (important)
+
+-- 👉 PM itself does NOT have containers, pages, or widgets.
+What you are seeing is SP content being shown through PM navigation.
+
+-- Yes 👍 — you can change things in PM, but only certain things.
+What you’re changing in PM is not the page content, it’s the navigation metadata.
+That’s why it feels like you’re changing SP content.
+
+
+
+ -- 1-05-2025
