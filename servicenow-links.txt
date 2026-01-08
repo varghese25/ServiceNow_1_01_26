@@ -3,3 +3,13 @@ https://dev356655.service-now.com/$spd.do#/pm/editor/portal_meum_homepage/
 
 ServiceNow Instance:
 https://dev356655.service-now.com
+
+
+“Service Portal – Container 1” usually refers to a container widget/section
+
+https://dev356655.service-now.com/sp
+
+
+Service Portal Config
+
+https://dev356655.service-now.com/sp_config

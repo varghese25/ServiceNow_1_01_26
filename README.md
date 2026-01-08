@@ -112,3 +112,23 @@ In this exercise, you will set the options for the Simple List widget to display
 -- In the main ServiceNow browser window, (not the Service Portal configuration page), use the All menu to open Incident > Open.
 
 -- Create a filter to display only active Incident records created by the currently logged in user.
+
+
+
+# 8-01-2026
+ 
+ https://dev356655.service-now.com/$spd.do#/pm/editor/portal_meum_homepage/ 
+ 
+ 
+ # Learned 
+ 
+ -- Exercise: Cool Clock and the Other Widgets
+ -- Exercise: Set Portal Homepage
+ -- Responsive Pages
+ 
+-- Fixed vs. Fluid Containers
+
+-- Showing and Hiding Containers
+-- Exercise: Hiding and Showing Containers
+-- Page Editor
+-- Exercise: Add a Role to a Widget
