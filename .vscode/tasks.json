@@ -1,0 +1,22 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Open ServiceNow Homepage",
+      "type": "shell",
+      "command": "start https://dev356655.service-now.com/$spd.do#/pm/editor/portal_meum_homepage/",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "Live Preview",
+      "workspacePath": "e:\\ServiceNow_1_01_26",
+      "problemMatcher": [],
+      "label": "Live Preview: Run Server",
+      "group": "build"
+    }
+  ]
+}
