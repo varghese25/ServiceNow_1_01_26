@@ -1,0 +1,137 @@
+Certified system administrator questions
+
+1)	In task record watch list users added to it will receive notification of anything added to work notes 
+Ans – No
+
+2)	What are key cmdb tables? 
+Ans - Cmdb_ci, cmdb_rel_ci
+
+3)	What are update set recommendations? 
+Ans – Customizations involving movement of update set from prod to development.
+
+4)	What are the UI interfaces of the workflow editor  
+Ans - Canvas, Title Bar, Palette. 
+
+5)	Another question related to Workflow UI Interface with different options
+Ans -Canvas, Header Bar, Palette, Activity Tab – Correct ans is Canvas, Palette
+
+6)	What are the main areas of User interface?
+ Ans -App Navigator, Banner, Content Frame.
+
+7)	What is recorded in the activity stream? 
+Ans -Record history/ updates of users.
+
+8)	What is the purpose of service catalog?
+Ans -To build complex workflows and send notifications to users/groups by fulfilling the request.
+
+9)	Which is not a category accessed under settings banner frame? 
+Ans -Records.
+
+10)	Is sla applicable only for task tables?  Yes
+
+11)	What users are allowed to do in Knowledge management?
+           Ans - create/edit/view articles.
+
+12)	What are two core tables?
+Ans -sys_user, cmn_location
+
+13)	What are column context menus? 
+
+Ans -Used for filtering the records (Don’t remember other options)
+14)	In user menu what actions can user complete?
+
+15)	Purpose of update set? (Please choose the option carefully as answers are tricky)
+Ans – Customizations involving movement of update set from prod to development.
+
+16)	What is an event in snow?
+
+Ans -Event causes a trigger which has a direct response in service now
+
+17)	Name of the string that displays the filter criteria. 
+
+Ans -Breadcrumbs.
+
+18)	From which places text search can be performed? 
+Ans - List view, News 
+
+19)	What role is used for adding or removing fields from the list?
+
+Ans -Personalize_list.
+
+20)	 Task related records extend task table. Can a task refer one or more configuration items?  
+ Ans -True.
+
+21)	Purpose of workflows?
+
+Ans -To implement multi-step process.
+
+
+22)	Which one best describes the ACL?
+
+Ans -It should satisfy both row and field level acl’s
+
+23)	Incident number is already prefixed with INCT. Can it be changed to INC using which option below?
+
+Ans -Number maintenance.
+
+24)	ACL is applied on?
+
+Ans -Tables and fields
+
+
+25)	Which best describes the roles?
+
+Ans -Roles will contain other roles and will inherit the contained roles as well.
+
+
+26)	How to differentiate SLA, OLA and underpinning contracts based on which options below?
+
+Ans -Type.
+
+27)	Workflow components?
+
+Ans -Approvals, Task Notifications
+
+28)	Which options below defines UI Actions?
+Ans -Related links, form buttons, list button.
+29)	Steps for loading data through transform map
+Ans -Load data -> Create transform map -> Run transform
+30)	A cmdb table is already extended can another class be created from this table?
+Ans -True.
+31)	Which of the following options execute at server side?
+
+Ans -Script include
+
+32)	What is the purpose of mapping assist? 
+
+Ans -Mapping done at field level
+
+
+33)	Which one is correct for describing a brule?
+Ans -A piece of JavaScript.
+
+34)	Difference between SAVE and INSERT buttons
+Ans -Save will stay on the form while insert will get re-directed to the list.
+
+35)	Which one among the below which ensures data security?
+Ans - Data policy.
+
+36)	Changes that aren’t captured in the update set – 
+Ans - User/group records, CI modifications
+
+37)	To generate task based records through service request which is the correct option below?
+Ans -Record producer.
+38)	When submit button appears on the form?
+                    Ans -New record.
+39)	Which is correct from below? 
+Ans -A column is field and row is a record.
+
+40)	Multiple customizations are done to the same form through different update sets. Which change would be moved to production.
+
+Ans – After merging the update sets the most recent one will be available.
+
+
+
+
+
+

@@ -1,0 +1,67 @@
+System Administration Certification Exam Practice Questions
+
+Import Sets
+-	What is the transform map used for? (A guide for moving data from import set tables to target tables)
+-	When should you coalesce fields on an import? (Before data transform)
+-	What happens when a match is found using the coalesce field? (The existing record will be updated with the information being imported)
+-	What happens if a match is not found? (A new record will be inserted into the database)
+ACL’s
+-	What is an access control? (Security rule defined and set at the row and column levels)
+-	What three ways can ACL’s be defined? (Roles, conditional expressions, and scripts)
+-	How are record ACL rules processed? (In order of most specific to most general)
+-	How are Table ACL rules processed? (Match table name, match the parent table name, match any table name [wildcard])
+Tables
+-	What does each record correspond to in a table? (Row)
+-	What does each column correspond to in a table (Field)
+-	What are the three attributes of a field? [Label (user friendly term), Name (unique term to the system) Value (actual data) ]
+Service Catalog
+-	What are the major components of the Service Catalog? (Items, Record Producers, Variables, Variable Sets, Workflows)
+-	Variables are global by default. (True/False)
+Filter conditions
+-	What are the three components of a filter condition? (Field, Operator, Value)
+Settings Menu 
+-	What categories are in the Settings Menu? General, Theme, Notifications, Lists, Forms and Developer
+-	Where can users define Notification channels and subscriptions? (Gear Icon Settings)
+Connect Presence
+-	Using this, are you able to see Editing in real-time on a form?  (True/False)
+Application Navigator
+-	What is displayed when using the Filter Navigator? Applications and Modules
+-	Where can you search text? (Knowledge, Filter Navigator, Chat)
+Lists
+-	Personalizing a list, who does it affect?  (Only the user)
+Forms
+-	What kinds of fields are typically on a form? (String, choice, true/false, reference)
+Saving Forms
+-	When does Submit appear on a form? (When it is a new record)
+Users
+-	What are some authentication methods? Local database, LDAP, Multifactor, SAML 2.0, OAuth 2.0, Digest Token, SSO
+-	Can roles contain other roles? (Yes, a role may contain other roles and any access granted to one role is automatically granted to any role that contains it.)
+Tables
+-	A table that is not extending another table but is itself extended is called what? (Base table)
+-	Can Assignment Rules be scripted? (Yes)
+-	How do you define a field on an extended table differently than the parent table? (Dictionary Overrides)
+Events
+-	How are events triggered? (User Actions, Scripts, Business Rules and Workflows)
+CMDB 
+-	How do you create CI relationships? (Use the CI Relationship Editor)
+-	What do you use to display the infrastructure view for a CI and its business services? (Dependency View)
+Reports
+-	What are metrics used for? (Used to measure and evaluate the effectiveness of IT service management processes)
+Workflows
+-	What represents the entire structure of the workflow and the definition of the processing a Workflow can accomplish? (Workflow Model)
+-	When a workflow is checked out, who do the changes apply to? (The user who has the Workflow checked out)
+-	What are the Workflow States? (Checked Out, Unpublished, and Published)
+SLA’s
+-	What is an SLA? (A record which defines a set amount of time for a task to reach a certain condition.)
+-	SLA’s can only run against tables that extend which table? (Task Table)
+Development
+-	UI Policies run on which side? (Client side)
+-	A UI action with an order number of 50 will display after a UI action with an order number of 60 (True/False)
+-	Business Rules monitor fields on a form (True/False)
+Upgrades
+-	What are exempt in upgrades? (Customizations)
+-	When should you clone your instance? (Before a formal testing cycle, after a comprehensive or long development cycle, after the completion of an application upgrade)
+Update Sets
+-	If several update sets have modified the same object, like a form, which change will be the one moved to the new, merged update set? (The most recent one)
+-	What data records are captured in an update set? (None. Data is not captured in an update set.)
+

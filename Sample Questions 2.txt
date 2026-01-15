@@ -1,0 +1,35 @@
+Certified system administrator questions:
+
+1.	What is there stored in CMDB? Ans: Measurable tangible and intangible data of a CI.
+2.	What are key cmdb tables? Ans - Cmdb_ci, cmdb_rel_ci
+3.	We can save many updates in many update sets? True or false
+4.	A table that doesn’t extends from other tables but can be extended? Ans: Base table
+5.	Name of the string that displays the filter criteria? Ans -Breadcrumbs.
+6.	What role is used for adding or removing fields from the list? Ans -Personalize_list.
+7.	Which one best describes the ACL? Ans -It should satisfy both row and field level acl’s
+8.	Processing order of ACLs.
+9.	Business rule? Ans: A piece of javascript
+10.	Which best describes the roles? Ans -Roles will contain other roles and will inherit the contained roles as well.
+11.	DB name for a custom table, say ‘abc’? Ans: u_abc
+12.	When submit button appears on the form? Ans -New record.
+13.	Multiple customizations are done to the same form through different update sets. Which change would be moved to production? Ans – After merging the update sets the most recent one will be available.
+14.	Changes that aren’t captured in the update set? Ans - User/group records, CI modifications
+15.	Workflow components? Ans -Approvals, Tasks, Notifications
+16.	To avoid multiple persons updating a workflow, what should be done?
+17.	How to differentiate SLA, OLA and underpinning contracts based on which options below? Ans -Type.
+18.	List is a type of report. True/false? Ans: True
+19.	Comments entered in work notes are captured where? Ans: Activity log
+20.	What is schema map?
+21.	Where is data stored? Ans: Tables
+22.	What is condition contains? Ans: a field,an oprerator and a value
+23.	What is column in table? Ans: A cell which hold table data
+24.	Which of the following can be performed by Inbound Email Action? Ans: Create or update task records
+25.	When do we perform cloning of an instance? Ans: Before upgrading an instance
+26.	Can we have multiple coalesce fields? Ans: Yes
+27.	What are the customizations we can do with respect to branding?(select all that apply) Options: Browser font size, browser title, banner size, form header size, branding image 
+28.	Types of client script.
+29.	Service Catalog variable types.
+30.	All applications are viewable in servicenow. True/false? Ans: False
+
+
+

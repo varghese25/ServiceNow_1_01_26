@@ -1,0 +1,256 @@
+1. Incident, problem tables inherit which table.
+Ans:  Task table.
+2. Give example of a one to many relationships
+ Ans: sys_user table referring to the assigned_to field in Task table
+3. When you customize a homepage, SNC makes a copy of it and ________
+ Ans:  adds the prefix "My" to the homepage name.
+4. Which of the following is true?
+ Ans:  When a user belongs to more than one group, each group provides him permissions.
+5. ______ receives notification, meeting invites on behalf of another user.
+ Ans:  Delegate
+6. What is SSO?
+Ans:  Single- Sign-On
+7. How do you edit/ create a workflow?
+Ans:  Graphical Workflow Editor
+8. What is the purpose of a service catalog workflow?
+Ans:  to create workflows to drive request fulfillment. Workflows can generate and assign approvals, generate and assign tasks, or run scripts and sub flows. 
+9. What is the important factor to remember when a user is creating catalog variable?
+ Ans:  Catalog Variables are global by default.
+10. What is the purpose of an update set?
+Ans:  An update set is a group of customizations that can be moved from one instance to another.
+11. How can you change the number prefix from "INC" to "IN" for incident table?
+Ans:  Number maintenance table
+12. Which of the following is possible via an inbound action?
+     A. schedule a job
+     B. sends an email notification
+     C. modifying existing records
+13. Which setting allows the user to view knowledge articles without logging in?
+     a. ESS Role   b. Public Setting c. View All Setting d. View all Role
+14. Which of the following defines a condition?
+Ans: Field, Operator, Value
+15. Which of the following is true regarding roles?
+Ans:  Roles can contain other roles. When user is assigned to a role, he will inherit the contained roles as well.
+16. ACL is part of which security?
+    a. Physical Security b. Contextual Security   c. Compliance Security
+17. Which is true regarding Knowledge Base?
+Ans:  In a Knowledge base, articles are grouped according to categories.
+18. How can you view the dictionary for a field?
+Ans:  Right clicks on the field and click Personalize Dictionary.
+19. Which among the following is true regarding ACLs?
+Ans: If there are row and field ACLs, user has to satisfy both to have access to the field.
+20. What is Data Dictionary?
+Ans: It contains information about a field's data type, character limit, default value, dependency, and other attributes.
+21. How do you know which release version of Service Now you are working on?
+Ans: Go to System Diagnostics->Stats and check the Build name.
+22. How do you change the color of the instance?
+Ans: Using Navigation Menu under Content Management.
+23. What does this icon do (provided impersonate key symbol)?
+24. What does this icon do (provided the home symbol in the banner)
+25. Which of the following is data saved to?
+     a. Table   b. Form   c. List
+26. When user creates a table "abc", how does service now name it?
+ Ans: u_abc
+27. Which among the following is true regarding tables?
+Ans:  You can delete the tables starting with "u_" permanently.
+28. Which of the following influences homepage performance
+Ans: Set refresh time as a long one or set it "off".
+29. If the system administrator wants to modify the homepage, which of the following links on the page indicates that this can be done
+  a. Add Context   b. Change Layout    c. Make Gauge
+30. What does the order field in service catalog do?
+ Ans: It displays the catalog item in the ascending order of this value.
+31. Which of the following gets automatically captured in an update set:-
+    a. Table, schedules, forms
+    b. Table, forms, data
+    c. Table, forms, homepages
+    d. Tables, forms, views
+32. What does the "coalesce" field do?
+Ans: Coalescing on a field (or set of fields) means the field will be used as a unique key.
+33. What details does a knowledge article hold?
+34. What does a transform map do?
+Ans:  A transform map is a set of field maps that determine the relationships between fields in an import set and fields in an existing Service Now table (such as Incidents or Users).
+35. How is the application Navigator (left nav) populated onload
+Ans: It is populated based on the role of the logged in user.
+36. Difference between client script and business rule
+Ans: Client script runs at client side onLoad, onchange and onSUbmit of the form, BR runs at server side before/after record in inserted, updated or deleted.
+37. onChange client script runs on
+Ans: Change in the value of a particular field
+38. Links, buttons, context menu action belongs to
+Ans: UI action
+39 Which among the following can a UI policy accomplish?
+Ans: Making a field read-only
+40. Which among the following is true:-
+Ans: Moving an entry from Selected to Available slush bucket removes it from the form.
+41. How do you confirm an instance upgrade?
+Ans: System Logs->events->system.upgraded, use this event to trigger the System Upgraded notification
+42. How do you approve a catalog request?
+43. What all modules can an ESS user see under in Service Catalog?
+44. What are the variables that you can add when you create a catalog item?
+Ans: Options contained the combinations of following fields:
+ Slush bucket, multiple choices, additional category, single line text, multi-line text, choice list, checkbox
+45. What is the purpose of an Order Guide?
+Ans: An order guide gives customers an easy way to order multiple related items as a single request, It uses: 
+ - A single initial screen, where the customer fills in some initial information. 
+- A set of selected catalog items based on conditions derived from the initial information. 
+46. Which of the following can be performed by a system administrator?
+Ans: Change the maximum size of attachments and restrict the type of attachments [I chose this option as this requires a modification in sys_properties, other options were     possible with non-admin roles]
+47. What all are available in a knowledge homepage?
+General, application, policies, email, news
+48. Which of the following are available in Service Catalog:-
+Ans: Record Producer, Catalog Variables, Order Guides
+49. Which of the following is true:-
+   a. When moved from left to right slush bucket, ref fields become bold
+   b. System tables cannot be deleted
+   c. Deleted system tables will be created again during an instance upgrade
+   d. [Don’t remember this one, I chose b] 
+50. Choose the order of evaluation of ACLs
+Ans: An ACL rule only grants a user access to an object if the user meets all of the permissions required by the matching ACL rules. 
+-The condition must evaluate to true. 
+-The script must evaluate to true or return an answer variable with the value of true. 
+-The user must have one of the roles in the required roles list. 
+-The other matching ACL rules for the object type must evaluate to true.
+
+51. What is sys_id?
+      ans - unique identifier for each record in a table
+52. ACL is applied on - s
+      a. user
+      b. groups
+      c. applications/modules
+      d. table and field in table
+53. Choose correct statement - 
+       ans - A column is a field and a row is a record
+54. What is the one pause condition for incident SLA?
+        ans - awaiting <something>
+ 55. What table is used to store SLAs?
+        ans - task_sla
+56. How will you approve a catalog request?
+      a. Right click request record in request list and click approve
+      b. Right click task record in task list and click approve
+      c. ...
+      d. ...
+ ans - I chose a as only that made sense
+57. What is one thing in workflows peculiar for catalog?
+ans - You can define visibility of variables on task form through workflow when it is created
+58. What is BSM MAP?
+59. What does CMDB consists of?
+60. How will you make service catalog workflow available?
+Ans- I chose - define workflow, create workflow activities and publish
+61. What is Coalease used for in import sets
+ans - It compares the uniqueness of data if not found, creates new record
+62. What steps will u take to load data from spreadsheet?
+ans - load data, create transform map, transform
+63. As an end user which modules of service catalog do you see?
+ans - My requests, Requested Item
+64. What does RITM stand for?
+ans - Requested Item
+65. for an incident form when saved
+       a. Additional comments get copied to work notes
+       b. work notes get copied to activity log
+       c. work notes get overwritten 
+      I chose b
+66. Which one on homepage will access knowledge?
+     a. news
+     b. catalog item
+     c. report
+     ans - a
+67. Applications and modules are loaded based on
+ ans - Roles
+68. Knowledge process consists of –
+ ans - document creation, approval and review from SMEs and publishing
+69. Gauge is added to
+ ans - homepage
+70. What is difference between Save & Insert action on form
+Ans. Save saves the record & stays on form, while Insert creates a new record & redirects to list view.
+71. If an admin wants to check the status of task from a service catalog request, what path he's expected to follow
+Ans. REQ (number)>>RITM (number)>>TASK (number)
+72. How the catalog variables cab be arranged on a catalog item
+Ans. By setting the appropriate value of field 'Order'.
+73. What do you mean by SaaS?
+Ans. Software as a Service
+74. Service catalog displays?
+Ans. catalog items, order guides and record producer
+75. ACL evaluates on below….
+Ans. condition / script and roles
+76. How do you enhance Homepage performance in case of gauges?
+Ans.  To diagnose problems and improve homepage performance, administrators can: 
+ 	Turn on homepage debugging 
+ 	Troubleshoot slow reports 
+Administrators can also tune homepage performance by configuring the properties described on the following pages: 
+ 	Parallel homepage rendering 
+ 	Homepage caching 
+77. Shortcut to approve a Service Request?
+Ans.   My request or Email
+78. How do you modify the field behavior?
+Ans.  Right click> Personalize > Dictionary
+79. What do you mean by Elevated Privileges?
+Ans. Session
+80. What things are tracked in customizations?
+Ans. Customizations are tracked by update sets only for some objects, using one of the following methods: 
+ 	The update_synch attribute on the table 
+ 	Special handlers for changes that require updates to multiple tables 
+ 	Manual unloading for homepages 
+Update sets cannot be used to transfer other system changes or data. In general, update sets capture configuration information but not task or process data. For example, update sets track service catalog item definitions and related configuration data like variables and variable choices. However, if you test the service catalog by placing orders, the orders (requests, items, catalog tasks) are not tracked by update sets. 
+81. Where are customizations stored?
+Ans. Each update set is stored in the Update Set [sys_update_set] table, and the customizations that are associated with the update set (stored in the Customer Update [sys_update_xml] table) appear as a related list on the update set record. 
+82. KB articles are referred in which modules below?
+Ans. Service Catalog, News, INC.
+83. What changes out of below would be applied in case of a merge update set?
+Ans. You can merge multiple update sets into one for easy transfer. 
+To merge update sets: 
+1.	Navigate to System Update Sets > Merge Update Sets. 
+2.	Use the slushbucket to select the update sets to merge. 
+3.	Enter a name for the new update set. Updates are added to this set when the original sets are merged. 
+4.	Click Merge selected. 
+	The new update set is created and changes from the original sets are moved to the new set. Only changes that are not merged into the new set remain in the original sets. 
+	If the same object is updated in both sets (for example, both update sets modify the Incident form), only the most recent change is moved to the merged update set. The other update remains in its original update set to provide a record of the changes that were not moved. You may want to validate that the correct changes were moved to the new set by viewing the update set. 
+After merging and validating, it is a good idea to delete or empty the original update sets to avoid applying an older change by mistake. The system does not remove the updates that were not merged into the new set.
+84. DB name for custom table?
+Ans. U_tbl
+85. How can you view reports on homepage?
+Ans. Reports  view/run  open a report  add to homepage
+86. Which is parent table for INC, CHG, PRB? 
+Ans. Task
+87. SLA, OLA and UC are configured in which module?
+Ans. SLM
+88. When high security plugin is enabled?
+Ans.  The Platform Security Settings - High plugin is active by default on all new Service Now instances. For instances in which the high security settings are active, observe the following cautions: 
+ 	Integrations into Service Now tables fail unless access control lists (ACL) are defined for the tables being accessed and the appropriate roles are assigned. 
+ 	The same ACL requirements apply for import sets that apply to integrations. 
+The Platform Security Settings - High plugin automatically activates the Contextual Security plugin if it is not already active. In addition, the Platform Security Settings - High plugin delivers the following settings and features in the context of increasing the security of your Service Now platform. 
+Features: 
+ 	High Security Settings: Default property values to harden security on your platform by centralizing all critical security settings to one location for management and auditing. 
+ 	Default Deny Property: A new security manager property controls the default security behavior for table access. 
+ 	Security Administrator Role: A new role used to prevent modification of key security settings and resources. The Security Administrator role is not inherited by the admin role and must be explicitly assigned. 
+ 	Access Control Lists: Prevents modification of sensitive and platform-level resources in prior versions. 
+ 	Property Access Control: Enables the ability to set read and write roles to individual properties in order to prevent modification. 
+ 	Elevated Privilege: Allows users to operate in the context of a normal user and elevate to higher security role when needed. 
+ 	Transaction and system logs are read only. 
+89. Data inconsistency correction is done from automated?
+Ans.
+I.	Plugin
+II.	Configurations
+III.	Workflow
+IV.	None of these
+90. Workflow editor and Service catalog differs in approval methodology?
+Ans. True
+91. If a split is added in a form, how many columns get created?
+Ans. Two
+92. Icon of reference?
+Ans. icon ( )
+93. Application Navigation Search history is stored somewhere or not?
+Ans. No
+94. Upgrade of instance, which is true?
+i) As an SN Admin, you will manually do it
+ii) It happens once in a year at 8 pm 
+iii) Customizations are lost?
+95. Data Dictionary is used for?
+Ans. Database Structure
+96. Import Sets characteristics
+97. How to change Homepage Color?
+Ans. CSS
+98. ESS can access-
+Ans.  My Items, My requests, KB
+99. ACL applies on?
+Ans.  Fields and tables
+100. Contextual Security-Question on hierarchy
+Ans.  Generic to specific
+101. 
