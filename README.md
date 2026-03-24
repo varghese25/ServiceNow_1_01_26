@@ -1,6 +1,46 @@
 # ServiceNow
 
 
+## ServiceNow Incident Management
+
+In ServiceNow, **Priority** and **Resolution** are distinct concepts used in Incident Management to control how quickly an issue is addressed and when it is officially closed.  
+
+- **Priority** determines the order in which incidents are handled.  
+- **Resolution** (tracked through the Resolution SLA) defines the time allowed to resolve the issue.  
+
+---
+
+## SLA Customization
+
+SLA configurations can be managed by users with the following roles:
+- `admin`
+- `sla_admin`
+- `sla_manager`
+
+To view or assign these roles, navigate to:  
+**All → User Administration → Roles**  
+(Table: `sys_user_role`)
+
+---
+
+## SLA Definition
+
+To create or manage SLAs, navigate to:  
+**All → Service Level Management → SLA Definitions**
+
+---
+
+## Learning Objectives
+
+- Understand how to assign SLAs to users or groups  
+- Learn how to customize SLAs  
+- Learn how to create an SLA  
+- Understand the **SLA breach concept**:
+  - If an SLA is not met, it results in a **breach**
+  - This may lead to penalties based on customer agreements  
+
+
+
 # ServiceNow CSA Preparation (Xanadu Release)
 
 This repository contains structured notes, checklists, and guidance to prepare for the  
