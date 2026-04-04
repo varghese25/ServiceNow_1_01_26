@@ -1,6 +1,12 @@
 # ServiceNow
 
 
+
+
+# Attachment
+
+Documents attached(PDF/GIF/PNG any format) to an Incident are stored in the `sys_attachment` table.
+
 ## ServiceNow Incident Management
 
 In ServiceNow, **Priority** and **Resolution** are distinct concepts used in Incident Management to control how quickly an issue is addressed and when it is officially closed.  
