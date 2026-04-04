@@ -1,6 +1,25 @@
 # ServiceNow
 
+## ServiceNow Technology Stack (Now Platform)
 
+ServiceNow is built on a proprietary technology stack known as the **Now Platform**, which follows a layered architecture composed of modern, enterprise-grade technologies.
+
+### Core Stack
+
+- **Programming Language:** The core backend is primarily written in Java.  
+- **Web Server:** The platform runs on Apache Tomcat deployed on a Linux operating system.  
+- **Database:** Initially built on MySQL/MariaDB, ServiceNow is transitioning toward **RaptorDB**, a high-performance database designed to support AI-intensive workloads.  
+- **Scripting:** JavaScript is the primary language for both client-side and server-side development, supporting modern ECMAScript standards (up to ES12).
+
+### Architecture & Cloud
+
+- **Infrastructure:** ServiceNow uses a **multi-instance architecture**, where each customer operates on a fully isolated instance with its own database and application logic, rather than sharing resources in a multi-tenant model.  
+- **Hosting:** It is a fully cloud-based platform (SaaS/PaaS). While ServiceNow manages its own global data centers, it also collaborates with hyperscalers such as Microsoft Azure and AWS for certain deployments.
+
+### User Experience & AI
+
+- **Frontend:** The user interface is built on the **Now Experience UI Framework**, which leverages React-inspired web components and the Seismic rendering engine.  
+- **Intelligence Layer:** The platform includes built-in Generative AI and machine learning capabilities through **Now Assist**, powered by domain-specific large language models (LLMs).
 
 
 # Attachment
