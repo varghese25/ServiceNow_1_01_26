@@ -1,5 +1,76 @@
 # ServiceNow
 
+
+# UpdateSet - Demo
+
+## What is UpdateSet?
+- What ever configuration change done that captured in a object that object moved to one instance to another instance.
+
+Dev (Suntec) -> Test (Suntec) -> QA (Sunted) -> Prod (FNB)
+
+In this Demo im moving from MyDev instance -> 356655 MyTest -> 373713
+
+---
+
+## ServiceNow SN
+
+### Step 1:
+(SN) All -> Local UpdateSet
+
+### Step 2:
+New -> UpdateSet, New Record
+
+### Step 3:
+STRY001-RULE-RK-V1
+
+### Step 4:
+Make this myCurrentSet (click)  
+STRY001-RULE-RK-V1 [What Ever i do captured in this update. Global Icon i will change red select STRY001-RULE-RK-V1]
+
+### Step 5:
+Im going to captured this change in  
+(SN) All -> Assignment DataLookups
+
+### Step 6:
+New ->  
+- category (Inquiry | help)  
+- Subcategory (AntiVirus)  
+- Assignment Group (Help Desl)
+
+### Step 7:
+Assignment Rule if want this to captured this STRY001-RULE-RK-V1 - deActive and Save it will be saved
+
+### Step 8:
+STRY001-RULE-RK-V1 (Inprogress to changes to Complete) Save. Once Everything completed change Status.
+
+---
+
+### Step 9:
+Move the update set From Dev -> Test
+
+**Note:** STRY001-RULE-RK-V1; Advice not change Current UpdateSet. Always Create New updateSet STRY001-RULE-RK-V2
+
+---
+
+### Step 10:
+From DEV -> Test Env pull the STRY001-RULE-RK-V1
+
+### Step 11:
+Test Env. (SN) All -> Update Source
+
+- Update Source -> Dev (My Dev 356655)
+- Test Env -> 373713 -> (SN) All -> Update Source
+
+- STRY001-RULE-RK-V1 Only Completed status Moved to Test Env
+
+---
+
+- Test Env -> Remote Instance DEV (Setup all test Connection) -> Click, Retrieve Completed Update Sets  
+- Test Env -> Retrieve update set (STRY001-RULE-RK-V1) Click, Run Preview Again  
+
+- Dev -> Local Update Sets (STRY001-RULE-RK-V1) Will be Displayed  
+- Test -> Local Update Set (STRY001-RULE-RK-V1) will be Displayed once COMMIT UPDATE SET (Clicked). in Test -> Local Update set (STRY001-RULE-RK-V1) Displayed.
+
 ## ServiceNow Technology Stack (Now Platform)
 
 ServiceNow is built on a proprietary technology stack known as the **Now Platform**, which follows a layered architecture composed of modern, enterprise-grade technologies.
