@@ -1,6 +1,99 @@
 # ServiceNow
 
 
+
+## ✅ Updated 23-Day CSA Plan
+
+### Day 1–10 (Same as yours)
+
+* Why ServiceNow Needed
+* Type of ServiceNow User
+* User, Group & Role
+* List & Form View
+* Task Management
+* Service-Level Agreement (SLA)
+* Data Lookup Definition & Trigger Rules
+* Archive Rules & Destroy Rules
+* Update Set Movement
+* Batch Update Set & Merge Update Set (low priority)
+
+---
+
+### 🔹 Core Configuration Phase
+
+* Configuration Item & Asset Management (CMDB)
+* Create Custom Table
+* Form Layout & Form Design
+* Application Scope & Scoped Application
+
+---
+
+### 🔹 Fields, Security & Logic
+
+* Type of Fields & Enable Table Audit
+* Access Control Lists (ACL)
+* Application Menu & Module
+* Form View & View Rule
+
+---
+
+### 🔹 Data Handling + Logic (UPDATED ⚠️)
+
+* Bulk Data Load from Excel
+  👉 + Import Sets & Transform Maps (MUST ADD)
+
+---
+
+### 🔹 Catalog & Automation (UPDATED ⚠️)
+
+* Create Catalog Item & Workflow
+  👉 + Record Producer (MUST ADD)
+  👉 + Flow Designer (basic idea) (MUST ADD)
+
+---
+
+### 🔹 Notifications & Scripting Basics (UPDATED ⚠️)
+
+* Email Notification
+  👉 + Notification Conditions (MUST ADD)
+  👉 + Business Rules (basic) (GOOD TO KNOW)
+  👉 + Client Scripts (basic) (GOOD TO KNOW)
+
+---
+
+### 🔹 Reporting & System
+
+* Report & Interactive Filter
+* System Health & Instance Debug
+
+---
+
+### 🔹 ADD THIS (VERY IMPORTANT ⚠️)
+
+👉 You didn’t explicitly include this — add it anywhere before Day 16:
+
+🔸 UI Policy vs Data Policy (MUST ADD)
+
+Best place: Day 15 or Day 18
+
+---
+
+## 🔥 Final Structure Summary
+
+### Must-add topics now included:
+
+✔ Flow Designer
+✔ UI Policy vs Data Policy
+✔ Record Producer
+✔ Import Sets & Transform Maps
+
+### Good-to-know included:
+
+✔ Business Rules
+✔ Client Scripts
+✔ Notification conditions
+<br>------------------------------------------<br>
+
 # UpdateSet - Demo
 
 ## What is UpdateSet?
