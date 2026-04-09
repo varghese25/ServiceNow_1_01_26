@@ -94,6 +94,22 @@ Best place: Day 15 or Day 18
 ✔ Notification conditions
 <br>------------------------------------------<br>
 
+- Day 11
+## Configuration Item & Assets
+
+> ⚠️ **Important Notes**
+>
+> # All the Assets is Configration items  
+> # All the Configuration Item
+
+## How Configuration Items & Assets Created
+
+1. Manually
+2. Discovery
+3. Intergration
+4. Data Load via Excel Sheet
+
+
 # UpdateSet - Demo
 
 ## What is UpdateSet?
