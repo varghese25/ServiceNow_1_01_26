@@ -100,7 +100,7 @@ Best place: Day 15 or Day 18
 > ⚠️ **Important Notes**
 >
 > # All the Assets is Configration items  
-> # All the Configuration Item
+> # All the Configuration Items is not a Asset
 
 ## How Configuration Items & Assets Created
 
