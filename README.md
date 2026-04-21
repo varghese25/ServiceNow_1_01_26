@@ -1,52 +1,103 @@
 # ServiceNow
 
+## Day 14 Application Scope
 
+- Global Application
+- Scope Application
+
+* Global Application
+ <p> u_ prefix
+Means: custom object created in the Global scope
+Example: u_vbsys_table
+Created when you build something without a scoped app
+
+👉 So:
+
+u\_ = custom in Global scope
+
+Global itself has no prefix for system tables:
+
+incident
+task
+sys_user
+
+But when YOU create something in Global:
+
+ServiceNow adds u\_
+
+- Scoped Application
+  x*<company>*<app> prefix
+  Means: scoped application namespace
+
+Example:
+
+x_vbsys_my_app
+Automatically generated when you create a scoped app
+
+👉 So:
+
+x\_... = scoped application (correct)
+
+| Prefix  | Meaning       | Scope      |
+| ------- | ------------- | ---------- |
+| `u_`    | Custom object | Global     |
+| `x_...` | App namespace | Scoped app |
+
+Simple way to remember
+u* → “user-created in Global”
+x* → “app-created in Scoped App”
+✅ Corrected version of your statement
+
+✔ u_vbsys → custom object in Global scope
+✔ x_vbsys → part of a Scoped Application namespace
+
+</p>
 
 ## ✅ Updated 23-Day CSA Plan
 
 ### Day 1–10 (Same as yours)
 
-* Why ServiceNow Needed
-* Type of ServiceNow User
-* User, Group & Role
-* List & Form View
-* Task Management
-* Service-Level Agreement (SLA)
-* Data Lookup Definition & Trigger Rules
-* Archive Rules & Destroy Rules
-* Update Set Movement
-* Batch Update Set & Merge Update Set (low priority)
+- Why ServiceNow Needed
+- Type of ServiceNow User
+- User, Group & Role
+- List & Form View
+- Task Management
+- Service-Level Agreement (SLA)
+- Data Lookup Definition & Trigger Rules
+- Archive Rules & Destroy Rules
+- Update Set Movement
+- Batch Update Set & Merge Update Set (low priority)
 
 ---
 
 ### 🔹 Core Configuration Phase
 
-* Configuration Item & Asset Management (CMDB)
-* Create Custom Table
-* Form Layout & Form Design
-* Application Scope & Scoped Application
+- Configuration Item & Asset Management (CMDB)
+- Create Custom Table
+- Form Layout & Form Design
+- Application Scope & Scoped Application
 
 ---
 
 ### 🔹 Fields, Security & Logic
 
-* Type of Fields & Enable Table Audit
-* Access Control Lists (ACL)
-* Application Menu & Module
-* Form View & View Rule
+- Type of Fields & Enable Table Audit
+- Access Control Lists (ACL)
+- Application Menu & Module
+- Form View & View Rule
 
 ---
 
 ### 🔹 Data Handling + Logic (UPDATED ⚠️)
 
-* Bulk Data Load from Excel
+- Bulk Data Load from Excel
   👉 + Import Sets & Transform Maps (MUST ADD)
 
 ---
 
 ### 🔹 Catalog & Automation (UPDATED ⚠️)
 
-* Create Catalog Item & Workflow
+- Create Catalog Item & Workflow
   👉 + Record Producer (MUST ADD)
   👉 + Flow Designer (basic idea) (MUST ADD)
 
@@ -54,7 +105,7 @@
 
 ### 🔹 Notifications & Scripting Basics (UPDATED ⚠️)
 
-* Email Notification
+- Email Notification
   👉 + Notification Conditions (MUST ADD)
   👉 + Business Rules (basic) (GOOD TO KNOW)
   👉 + Client Scripts (basic) (GOOD TO KNOW)
@@ -63,8 +114,8 @@
 
 ### 🔹 Reporting & System
 
-* Report & Interactive Filter
-* System Health & Instance Debug
+- Report & Interactive Filter
+- System Health & Instance Debug
 
 ---
 
@@ -95,11 +146,13 @@ Best place: Day 15 or Day 18
 <br>------------------------------------------<br>
 
 - Day 11
+
 ## Configuration Item & Assets
 
 > ⚠️ **Important Notes**
 >
-> # All the Assets is Configration items  
+> # All the Assets is Configration items
+>
 > # All the Configuration Items is not a Asset
 
 ## How Configuration Items & Assets Created
@@ -109,10 +162,10 @@ Best place: Day 15 or Day 18
 3. Intergration
 4. Data Load via Excel Sheet
 
-
 # UpdateSet - Demo
 
 ## What is UpdateSet?
+
 - What ever configuration change done that captured in a object that object moved to one instance to another instance.
 
 Dev (Suntec) -> Test (Suntec) -> QA (Sunted) -> Prod (FNB)
@@ -124,37 +177,47 @@ In this Demo im moving from MyDev instance -> 356655 MyTest -> 373713
 ## ServiceNow SN
 
 ### Step 1:
+
 (SN) All -> Local UpdateSet
 
 ### Step 2:
+
 New -> UpdateSet, New Record
 
 ### Step 3:
+
 STRY001-RULE-RK-V1
 
 ### Step 4:
+
 Make this myCurrentSet (click)  
 STRY001-RULE-RK-V1 [What Ever i do captured in this update. Global Icon i will change red select STRY001-RULE-RK-V1]
 
 ### Step 5:
+
 Im going to captured this change in  
 (SN) All -> Assignment DataLookups
 
 ### Step 6:
-New ->  
-- category (Inquiry | help)  
-- Subcategory (AntiVirus)  
+
+New ->
+
+- category (Inquiry | help)
+- Subcategory (AntiVirus)
 - Assignment Group (Help Desl)
 
 ### Step 7:
+
 Assignment Rule if want this to captured this STRY001-RULE-RK-V1 - deActive and Save it will be saved
 
 ### Step 8:
+
 STRY001-RULE-RK-V1 (Inprogress to changes to Complete) Save. Once Everything completed change Status.
 
 ---
 
 ### Step 9:
+
 Move the update set From Dev -> Test
 
 **Note:** STRY001-RULE-RK-V1; Advice not change Current UpdateSet. Always Create New updateSet STRY001-RULE-RK-V2
@@ -162,9 +225,11 @@ Move the update set From Dev -> Test
 ---
 
 ### Step 10:
+
 From DEV -> Test Env pull the STRY001-RULE-RK-V1
 
 ### Step 11:
+
 Test Env. (SN) All -> Update Source
 
 - Update Source -> Dev (My Dev 356655)
@@ -174,10 +239,10 @@ Test Env. (SN) All -> Update Source
 
 ---
 
-- Test Env -> Remote Instance DEV (Setup all test Connection) -> Click, Retrieve Completed Update Sets  
-- Test Env -> Retrieve update set (STRY001-RULE-RK-V1) Click, Run Preview Again  
+- Test Env -> Remote Instance DEV (Setup all test Connection) -> Click, Retrieve Completed Update Sets
+- Test Env -> Retrieve update set (STRY001-RULE-RK-V1) Click, Run Preview Again
 
-- Dev -> Local Update Sets (STRY001-RULE-RK-V1) Will be Displayed  
+- Dev -> Local Update Sets (STRY001-RULE-RK-V1) Will be Displayed
 - Test -> Local Update Set (STRY001-RULE-RK-V1) will be Displayed once COMMIT UPDATE SET (Clicked). in Test -> Local Update set (STRY001-RULE-RK-V1) Displayed.
 
 ## ServiceNow Technology Stack (Now Platform)
@@ -186,21 +251,20 @@ ServiceNow is built on a proprietary technology stack known as the **Now Platfor
 
 ### Core Stack
 
-- **Programming Language:** The core backend is primarily written in Java.  
-- **Web Server:** The platform runs on Apache Tomcat deployed on a Linux operating system.  
-- **Database:** Initially built on MySQL/MariaDB, ServiceNow is transitioning toward **RaptorDB**, a high-performance database designed to support AI-intensive workloads.  
+- **Programming Language:** The core backend is primarily written in Java.
+- **Web Server:** The platform runs on Apache Tomcat deployed on a Linux operating system.
+- **Database:** Initially built on MySQL/MariaDB, ServiceNow is transitioning toward **RaptorDB**, a high-performance database designed to support AI-intensive workloads.
 - **Scripting:** JavaScript is the primary language for both client-side and server-side development, supporting modern ECMAScript standards (up to ES12).
 
 ### Architecture & Cloud
 
-- **Infrastructure:** ServiceNow uses a **multi-instance architecture**, where each customer operates on a fully isolated instance with its own database and application logic, rather than sharing resources in a multi-tenant model.  
+- **Infrastructure:** ServiceNow uses a **multi-instance architecture**, where each customer operates on a fully isolated instance with its own database and application logic, rather than sharing resources in a multi-tenant model.
 - **Hosting:** It is a fully cloud-based platform (SaaS/PaaS). While ServiceNow manages its own global data centers, it also collaborates with hyperscalers such as Microsoft Azure and AWS for certain deployments.
 
 ### User Experience & AI
 
-- **Frontend:** The user interface is built on the **Now Experience UI Framework**, which leverages React-inspired web components and the Seismic rendering engine.  
+- **Frontend:** The user interface is built on the **Now Experience UI Framework**, which leverages React-inspired web components and the Seismic rendering engine.
 - **Intelligence Layer:** The platform includes built-in Generative AI and machine learning capabilities through **Now Assist**, powered by domain-specific large language models (LLMs).
-
 
 # Attachment
 
@@ -208,16 +272,17 @@ Documents attached(PDF/GIF/PNG any format) to an Incident are stored in the `sys
 
 ## ServiceNow Incident Management
 
-In ServiceNow, **Priority** and **Resolution** are distinct concepts used in Incident Management to control how quickly an issue is addressed and when it is officially closed.  
+In ServiceNow, **Priority** and **Resolution** are distinct concepts used in Incident Management to control how quickly an issue is addressed and when it is officially closed.
 
-- **Priority** determines the order in which incidents are handled.  
-- **Resolution** (tracked through the Resolution SLA) defines the time allowed to resolve the issue.  
+- **Priority** determines the order in which incidents are handled.
+- **Resolution** (tracked through the Resolution SLA) defines the time allowed to resolve the issue.
 
 ---
 
 ## SLA Customization
 
 SLA configurations can be managed by users with the following roles:
+
 - `admin`
 - `sla_admin`
 - `sla_manager`
@@ -237,14 +302,12 @@ To create or manage SLAs, navigate to:
 
 ## Learning Objectives
 
-- Understand how to assign SLAs to users or groups  
-- Learn how to customize SLAs  
-- Learn how to create an SLA  
+- Understand how to assign SLAs to users or groups
+- Learn how to customize SLAs
+- Learn how to create an SLA
 - Understand the **SLA breach concept**:
   - If an SLA is not met, it results in a **breach**
-  - This may lead to penalties based on customer agreements  
-
-
+  - This may lead to penalties based on customer agreements
 
 # ServiceNow CSA Preparation (Xanadu Release)
 
@@ -256,6 +319,7 @@ This repository contains structured notes, checklists, and guidance to prepare f
 ## ❓ Is This Enough to Clear the ServiceNow CSA Exam?
 
 ### Short Answer
+
 ⚠️ **Almost, but not fully on its own.**
 
 ---
@@ -264,15 +328,15 @@ This repository contains structured notes, checklists, and guidance to prepare f
 
 The following topics align very well with the **CSA exam syllabus (Xanadu)**:
 
-- Users, Groups, Roles  
-- Lists & Forms  
-- Tables & Fields  
-- ACLs (Access Control Lists)  
-- Update Sets  
-- Import Sets / Excel Data Load  
-- Catalog Items & Workflow (basic)  
-- Notifications & Reports  
-- Instance Health & Debugging  
+- Users, Groups, Roles
+- Lists & Forms
+- Tables & Fields
+- ACLs (Access Control Lists)
+- Update Sets
+- Import Sets / Excel Data Load
+- Catalog Items & Workflow (basic)
+- Notifications & Reports
+- Instance Health & Debugging
 
 👉 **Coverage:** ~**70–80%** of CSA exam content.
 
@@ -282,14 +346,14 @@ The following topics align very well with the **CSA exam syllabus (Xanadu)**:
 
 The CSA exam (Xanadu) also expects understanding of:
 
-- Instance security concepts  
-  - Roles vs ACLs  
-  - ACL evaluation order  
-- CMDB fundamentals & relationships  
-- UI Policies vs Client Scripts  
-- Business Rules (when and why to use them)  
-- Knowledge Management  
-- ServiceNow best practices & governance  
+- Instance security concepts
+  - Roles vs ACLs
+  - ACL evaluation order
+- CMDB fundamentals & relationships
+- UI Policies vs Client Scripts
+- Business Rules (when and why to use them)
+- Knowledge Management
+- ServiceNow best practices & governance
 - Strong hands-on navigation familiarity (**critical for CSA**)
 
 ---
@@ -298,8 +362,8 @@ The CSA exam (Xanadu) also expects understanding of:
 
 If you:
 
-- ✔ Complete this course (Xanadu-based)  
-- ✔ Practice extensively in a **ServiceNow Personal Developer Instance (PDI)**  
+- ✔ Complete this course (Xanadu-based)
+- ✔ Practice extensively in a **ServiceNow Personal Developer Instance (PDI)**
 - ✔ Revise **CSA mock tests / practice questions**
 
 👉 You will have an **85–90% chance of clearing the CSA exam**.
@@ -311,54 +375,64 @@ If you:
 Use this checklist to validate your readiness:
 
 ### Platform Basics
-- [ ] Application Navigator & Filters  
-- [ ] List personalization  
-- [ ] Form configuration  
-- [ ] Saved filters  
+
+- [ ] Application Navigator & Filters
+- [ ] List personalization
+- [ ] Form configuration
+- [ ] Saved filters
 
 ### User Administration
-- [ ] Create Users  
-- [ ] Create Groups  
-- [ ] Assign Roles  
-- [ ] Understand role inheritance  
+
+- [ ] Create Users
+- [ ] Create Groups
+- [ ] Assign Roles
+- [ ] Understand role inheritance
 
 ### Tables & Fields
-- [ ] Create custom tables  
-- [ ] Add field types (String, Choice, Reference)  
-- [ ] Understand table hierarchy  
+
+- [ ] Create custom tables
+- [ ] Add field types (String, Choice, Reference)
+- [ ] Understand table hierarchy
 
 ### Forms & UI
-- [ ] Configure Form Layouts & Views  
-- [ ] Create UI Policies  
-- [ ] Compare UI Policies vs Client Scripts  
+
+- [ ] Configure Form Layouts & Views
+- [ ] Create UI Policies
+- [ ] Compare UI Policies vs Client Scripts
 
 ### Security
-- [ ] Understand ACL structure  
-- [ ] Create Read / Write ACLs  
-- [ ] Understand ACL evaluation order  
+
+- [ ] Understand ACL structure
+- [ ] Create Read / Write ACLs
+- [ ] Understand ACL evaluation order
 
 ### Automation
-- [ ] Create Business Rules  
-- [ ] Identify when to use Business Rules vs UI Policies  
-- [ ] Basic Flow Designer understanding  
+
+- [ ] Create Business Rules
+- [ ] Identify when to use Business Rules vs UI Policies
+- [ ] Basic Flow Designer understanding
 
 ### Data Management
-- [ ] Import data using Import Sets  
-- [ ] Create Transform Maps  
+
+- [ ] Import data using Import Sets
+- [ ] Create Transform Maps
 
 ### CMDB
-- [ ] Understand CI classes  
-- [ ] Create CI records  
-- [ ] Understand relationships  
+
+- [ ] Understand CI classes
+- [ ] Create CI records
+- [ ] Understand relationships
 
 ### Knowledge & Catalog
-- [ ] Create Knowledge Articles  
-- [ ] Configure Knowledge Categories  
-- [ ] Create basic Catalog Items  
+
+- [ ] Create Knowledge Articles
+- [ ] Configure Knowledge Categories
+- [ ] Create basic Catalog Items
 
 ### Reports & Notifications
-- [ ] Create Reports  
-- [ ] Create Email Notifications  
+
+- [ ] Create Reports
+- [ ] Create Email Notifications
 
 ---
 
@@ -431,17 +505,17 @@ servicenow-csa-prep/
 
 
  -- 1-03-2025
- 
+
  # How to Created Portal / page / Desgin (Website)
- 
+
  -- Service Portal > Service Portal Configuration.
   https://dev356655.service-now.com/sp_config
- 
- -- https://dev356655.service-now.com/$spd.do#/pm/editor/portal_meum_homepage/ 
- 
+
+ -- https://dev356655.service-now.com/$spd.do#/pm/editor/portal_meum_homepage/
+
  -- https://dev356655.service-now.com/sp_config (Service Portal -> Brading Editor / Design / Page Editor /Widget Editor /New Portal /Gelp Help)
- 
- 
+
+
  -- https://dev356655.service-now.com/$spd.do#/pm/editor/portal_meum_homepage/4a7fe71893de32507e33f9f7dd03d60e
 
 
@@ -521,19 +595,20 @@ In this exercise, you will set the options for the Simple List widget to display
 
 
 # 8-01-2026
- 
- https://dev356655.service-now.com/$spd.do#/pm/editor/portal_meum_homepage/ 
- 
- 
- # Learned 
- 
+
+ https://dev356655.service-now.com/$spd.do#/pm/editor/portal_meum_homepage/
+
+
+ # Learned
+
  -- Exercise: Cool Clock and the Other Widgets
  -- Exercise: Set Portal Homepage
  -- Responsive Pages
- 
+
 -- Fixed vs. Fluid Containers
 
 -- Showing and Hiding Containers
 -- Exercise: Hiding and Showing Containers
 -- Page Editor
 -- Exercise: Add a Role to a Widget
+```
