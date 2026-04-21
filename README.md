@@ -53,6 +53,21 @@ x* → “app-created in Scoped App”
 
 </p>
 
+- Step Create Scope Application
+
+* Step 1 Open ServiceNow Studio
+* Step 2 Create App
+* Step 3 Create Table
+* Step 4 Table - Fields (Save)
+* Step 5 Edit App -> Create -> Application Menu
+* Step 6 Create Module - aDD TABLE
+* Step 7 Open All -> Menu (Refer the VbSystem App)
+
+* Note:
+* Application = container
+* Application Menu = sidebar heading
+* Module = clickable link
+
 ## ✅ Updated 23-Day CSA Plan
 
 ### Day 1–10 (Same as yours)
