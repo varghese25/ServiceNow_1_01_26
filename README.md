@@ -1,5 +1,9 @@
 # ServiceNow
 
+
+
+
+
 ## Day 14 Application Scope
 
 - Global Application
