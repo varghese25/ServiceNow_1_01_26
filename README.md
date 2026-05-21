@@ -1,8 +1,11 @@
 # ServiceNow
 
-
-
-
+ACL
+Pattern.    Meaning
+table.field One field
+table.*.     All fields in one table
+*.field.     Same field in all tables
+*.*.         Everything
 
 ## Day 14 Application Scope
 
