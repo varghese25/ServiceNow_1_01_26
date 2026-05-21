@@ -1,5 +1,25 @@
 # ServiceNow
 
+
+
+
+
+| Feature                  | Purpose                           | Main Use Case                                       |
+| ------------------------ | --------------------------------- | --------------------------------------------------- |
+| ServiceNow Virtual Agent | Chatbot framework                 | Employees/customers ask questions or raise requests |
+| Now Assist               | AI-powered assistant using LLMs   | Generates intelligent conversational answers        |
+| Now Messenger            | Web/mobile chat widget            | Front-end chat experience for users                 |
+| Agent Assist             | Helps support agents during chats | Suggests KB articles, summaries, responses          |
+| Connect Agent            | Human agent communication         | Escalation from bot to human support                |
+
+
+
+
+- What are the three key tables in an enterprise CMDB?
+# cmdb
+# cmdb_rel_ci
+# cmdb_ci
+
 ACL
 Pattern.    Meaning
 table.field One field
