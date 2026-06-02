@@ -1,7 +1,15 @@
 # ServiceNow
 
 
+# Flow Designer
 
+- Flow Designer (in Servicellow) is a no-code / low-code tool used to automate tasks and processes.
+
+- flow designer (to create/edit flows) Role Must be provide
+
+- action designer (to create custom actions) Role Must be provide
+
+- flow operator (to view execution details and logs) Role Must be provide
 
 
 | Feature                  | Purpose                           | Main Use Case                                       |
